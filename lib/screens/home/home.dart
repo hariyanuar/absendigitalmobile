@@ -1,3 +1,4 @@
+import 'package:absendigital/services/auth.dart';
 import 'package:absendigital/widget/bottom_navbar_item.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final AuthService _auth = AuthService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +50,9 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                         InkWell(
-                          onTap: () {},
+                          onTap: () async {
+                            await _auth.logout();
+                          },
                           child: Icon(Icons.logout, color: whiteColor),
                         )
                       ],
