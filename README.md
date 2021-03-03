@@ -1,6 +1,6 @@
 # absendigital
 
-A new Flutter project.
+A Project about digital check in.
 
 ## Getting Started
 
