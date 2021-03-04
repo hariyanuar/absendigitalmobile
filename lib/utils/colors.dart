@@ -34,3 +34,10 @@ TextStyle regularTextStyle = GoogleFonts.poppins().copyWith(
   fontWeight: FontWeight.w400,
   color: blackColor,
 );
+
+InputDecoration textInputDecoration = InputDecoration(
+  contentPadding: const EdgeInsets.symmetric(vertical: 25),
+  hintStyle: greyTextStyle,
+  fillColor: whiteColor,
+  filled: true,
+);
